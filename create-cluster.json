@@ -1,0 +1,14 @@
+{
+    "cluster_name": "ngoc-cluster",
+    "spark_version": "10.4.x-gpu-ml-scala2.12",
+    "node_type_id": "Standard_DS14_v2",
+    "num_workers": 1,
+    "spark_conf": {
+        "spark.databricks.cluster.profile": "singleNode",
+        "spark.speculation": true,
+        "spark.master": "local[*, 4]"
+    },
+    "custom_tags": {
+        "ResourceClass": "SingleNode"
+    }
+}
